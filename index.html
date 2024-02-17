@@ -95,9 +95,8 @@
         return;
       }
       
-      const decreasedNumber = number + (number * 0.06);
-      const formattedNumber = decreasedNumber % 1 === 0 ? decreasedNumber.toFixed(0) : decreasedNumber.toFixed(2);
-      resultDiv.textContent = `ჩამოსაჭრელი რაოდენობა: ${formattedNumber}`;
+      const decreasedNumber = number / 0.94;
+      resultDiv.textContent = `ჩამოსაჭრელი რაოდენობა: ${decreasedNumber}`;
     });
   
     copyButton.addEventListener('click', () => {
